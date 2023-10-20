@@ -1,0 +1,156 @@
+.Contact{
+    display: flex;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+.details{
+    border: 0;
+    width: 40%;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    margin-left: 5%;
+    margin-top: 4%;
+    padding-top: 4%;
+}
+.details h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.details p{
+    text-align: center;
+    padding: 10px;
+}
+
+.sending{
+    border: 0;
+    width: 40%;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+.sending .input-text{
+    margin:3px;
+    width: 48%;
+    padding: 10px;
+    border-radius:5%;
+    border: 0;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+}
+.sending .input-text:hover{
+    border: 2px solid #E3F4F4;
+}
+.sending .input-email{
+    margin:3px;
+    width: 48%;
+    padding: 10px;
+    border-radius:5%;
+    border: 0;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+}
+.sending .input-email:hover{
+    border: 2px solid #E3F4F4;
+}
+.sending textarea{
+    width: 99%;
+    margin: 3px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius:2%;
+}
+.sending textarea:hover{
+    border: 2px solid #E3F4F4;
+}
+
+.send{
+    margin-left: 50%;
+    margin-top: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border: 0;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    cursor: pointer;
+    background-color: #7752FE;
+    color: #fff;
+    border-radius: 6%;
+    transition: all 0.3s;
+}
+.send:hover{
+    transform: scale(1.1);
+}
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .title {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+    }
+
+    .Contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details, .sending {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+
+    .details h2 {
+        font-size: 1.3rem;
+    }
+
+    .details p {
+        padding: 5px;
+    }
+
+    .sending .input-text, .sending .input-email, .sending textarea {
+        width: 100%;
+    }
+
+    .send {
+        margin: auto;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+}
+
+/* For screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+    }
+
+    .details, .sending {
+        width: 90%;
+        margin-top: 3%;
+    }
+
+    .details h2 {
+        font-size: 1.1rem;
+    }
+
+    .details p {
+        font-size: 0.9rem;
+    }
+
+    .send {
+        padding: 8px 10px;
+        border-radius: 5%;
+        font-size: 1rem;
+    }
+}

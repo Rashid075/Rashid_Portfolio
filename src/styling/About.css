@@ -1,0 +1,159 @@
+.about{
+    display: flex;
+}
+
+.heading{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+
+.myself{
+    border: 0;
+    width: 40%;
+    height: 50%;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+.myself h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.myself p{
+    text-align: center;
+    padding: 10px;
+}
+
+.myself .download{
+    padding: 10px;
+    background-color: transparent;
+    border: 0;
+    border-radius: 8px;
+    cursor:pointer;
+    display: block;
+    margin: auto;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    margin-top: 8px;
+    margin-bottom: 15px;
+    text-decoration: none;
+}
+
+.myself .download:hover{
+    transition: 0.5s;
+    background-color: #7752FE;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.myself1{
+    border: 0;
+    width: 40%;
+    outline: 0;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    margin-left: 5%;
+    margin-top: 4%;
+}
+.myself1 h2{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 10px;
+}
+.cont{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-left: 10px;
+}
+.cont span{
+    font-size: 14px;
+    margin: 3px;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    border-radius: 8%;
+    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+}
+
+.cont span:hover{
+    background-color: #419197;
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+/* For screens with a maximum width of 768px */
+@media screen and (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .myself {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+
+    .myself h2 {
+        font-size: 1.3rem;
+    }
+
+    .myself p {
+        padding: 5px;
+    }
+
+    .myself1 {
+        width: 80%;
+        margin-left: 0;
+        margin-top: 4%;
+    }
+
+    .myself1 h2 {
+        font-size: 1.3rem;
+    }
+
+    .cont span {
+        font-size: 12px;
+        padding: 5px;
+    }
+
+    .cont span:hover {
+        transform: scale(1.05);
+    }
+}
+
+/* For screens with a maximum width of 480px */
+@media screen and (max-width: 480px) {
+    .heading {
+        font-size: 1.2rem;
+        padding-top: 2rem;
+    }
+
+    .myself, .myself1 {
+        width: 90%;
+        margin-top: 3%;
+    }
+
+    .myself h2, .myself1 h2 {
+        font-size: 1.1rem;
+    }
+
+    .cont span {
+        font-size: 10px;
+        padding: 3px;
+    }
+}
