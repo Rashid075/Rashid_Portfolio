@@ -14,3 +14,15 @@
     padding: 30px;
     color: #fff;
 }
+
+@media (max-width: 1040px) {
+    .typo{
+        margin-left: 10%;
+    }
+}
+
+@media (max-width: 768px) {
+    .typo{
+        margin-left: 10%;
+    }
+}

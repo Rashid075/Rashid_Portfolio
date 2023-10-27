@@ -102,16 +102,16 @@
 
 @media (max-width: 480px) {
     .swiper-slide {
-        width: 70%; /* Adjust the swiper-slide width for mobile devices */
+        width: 70%; 
         height: auto;
     }
 
     .container {
-        width: 100%; /* Adjust the card width for mobile devices */
+        width: 100%; 
     }
 
     .container h4, .container p {
-        font-size: 1rem; /* Adjust font size for mobile devices */
+        font-size: 1rem; 
     }
 }
 

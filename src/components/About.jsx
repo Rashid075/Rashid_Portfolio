@@ -35,7 +35,7 @@ export const About = () => {
                                     <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
                                         Frontend Technologies
                                     </Typography>
-                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                    <Typography variant="body2" className='typo' sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
                                         <span > <FaHtml5 size={15} style={{ marginRight: '10px' }} />HTML</span>
                                         <span><FaCss3Alt size={15} style={{ marginRight: '10px' }} />CSS</span>
                                         <span><FaJsSquare size={15} style={{ marginRight: '10px' }} />JavaScript</span>
@@ -61,7 +61,7 @@ export const About = () => {
                                     <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
                                         Backend Technologies
                                     </Typography>
-                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                    <Typography variant="body2" className='typo' sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
                                         <span > <FaNodeJs size={15} style={{ marginRight: '10px' }} />NodeJS</span>
                                         <span><SiExpress size={15} style={{ marginRight: '10px' }} />ExpressJS</span>
                                         <span><SiMongodb size={15} style={{ marginRight: '10px' }} />MongoDB</span>
@@ -87,8 +87,8 @@ export const About = () => {
                                     <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
                                         Programming Languages
                                     </Typography>
-                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
-                                        <span > <BiCodeCurly size={15} style={{ marginRight: '10px' }} />C Programming</span>
+                                    <Typography variant="body2" className='typo' sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                        <span > <BiCodeCurly size={15} style={{ marginRight: '10px' }} />C </span>
                                         <span><BiCodeCurly size={15} style={{ marginRight: '10px' }} />C++</span>
                                         <span><FaPython size={15} style={{ marginRight: '10px' }} />Python</span>
                                     </Typography>
