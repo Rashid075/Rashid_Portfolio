@@ -1,61 +1,78 @@
-.footer-links{
-    text-decoration: none;
-}
-.Footer{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+/* Default Styles */
+.footer {
     width: 100%;
-    z-index: 10;
-    padding: 1rem 0;
-    margin-top: 25px;
-    height: 50px;
-    border: 1px dotted #B4B4B3;
+    padding: 6rem;
+    background-color: black;
+    color: #fff; /* Set the text color to white */
 }
-.footer-elements{
+
+.footer-container {
+    max-width: 1140px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 40px;
+}
+
+.left {
+    height: 100%;
+    max-width: 100%;
     display: flex;
-}
-.footer-elements li{
-    padding: 0 1.5rem;
-    list-style-type:none;
+    flex-direction: column;
+    padding: 1rem;
 }
 
-.footer-links:hover{
-    padding:2px;
-    transition: 0.4s;
-    color: #7752FE;
+.location {
+    display: flex;
+    margin-bottom: 0.8rem;
 }
 
-/* For screens with a maximum width of 768px */
-@media screen and (max-width: 768px) {
-    .Footer {
-        height: auto;
-        flex-direction: column;
-        align-items: center;
-        padding: 1rem 0;
+.location p {
+    line-height: 30px;
+}
+
+.right {
+    height: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.social {
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+h4 {
+    font-size: 1.4rem;
+    padding-bottom: 0.7rem;
+}
+
+p {
+    font-size: 1.2rem;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .footer-container {
+        grid-template-columns: 1fr; 
     }
 
-    .footer-elements {
-        margin-top: 15px;
-    }
-
-    .footer-elements li {
-        padding: 0.5rem 0;
+    .left, .right {
+        text-align: center; 
+        margin-left: 0px;
     }
 }
 
-/* For screens with a maximum width of 480px */
-@media screen and (max-width: 480px) {
-    .Footer {
-        padding: 0.5rem 0;
+@media (max-width: 480px) {
+    .footer {
+        padding: 3rem; 
     }
-
-    .footer-elements {
-        flex-direction: column;
-        align-items: center;
+    .location, .email,.phone{
+        margin-right: 0;
     }
-
-    .footer-elements li {
-        padding: 0.5rem 0;
+    .footer-container {
+        grid-template-columns: 1fr;
     }
 }

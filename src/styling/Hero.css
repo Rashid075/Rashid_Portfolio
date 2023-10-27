@@ -1,5 +1,13 @@
 *{
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+.heroo{
+    /* background-color: #FFF0F5; */
+    background-image: url('https://img.freepik.com/free-photo/blue-curve-abstract-background-with-design-space_53876-104767.jpg?size=626&ext=jpg&ga=GA1.1.134294676.1694251365&semt=ais');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 55px;
 }
 
 .text{
@@ -67,25 +75,35 @@
     padding: 10px 10px 5px 10px;
     outline: 0;
     box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
+    color: #000;
 }
 
 .social-links:hover{
-    background-color: #8ECDDD   ;
-    transition: 0.2s;
-    
+    background-color: #00A9FF;
+    color: #fff;
+    transition: 0.5s;
 }
 
 .images img{
-    width: 25%;
-    height: 75vh;
+    width: 30%;
+    height: 68vh;
     margin-left: 45rem;
     margin-top:10%;
     padding: 10px;
-    border-radius: 10%;
+    border-radius: 50%;
 }
 
-/* For screens with a maximum width of 1040px */
+
 @media screen and (max-width: 1040px) {
+    .images{
+        text-align: center;
+    }
+    .images img {
+        width: 65%;
+        height: 35vh;
+        margin-left: 0;
+        margin-top: 10px;
+    }
     .text {
         position: relative;
         top: auto;
@@ -126,16 +144,8 @@
         text-align: center;
         margin-top: 20px;
     }
-
-    .images img {
-        width: 100%;
-        height: auto;
-        margin-left: 0;
-        margin-top: 10px;
-    }
 }
 
-/* For screens with a maximum width of 768px */
 @media screen and (max-width: 768px) {
     .text .header {
         font-size: 1.2rem;

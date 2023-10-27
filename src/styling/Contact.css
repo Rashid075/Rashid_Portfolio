@@ -1,6 +1,17 @@
+*{
+    scroll-behavior: smooth;
+}
+#Contact{
+    background-image: url('https://images.unsplash.com/photo-1528731708534-816fe59f90cb?auto=format&fit=crop&q=60&w=600&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ1fHxsaWdodCUyMHBvcnRmb2xpbyUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+}
 .Contact{
     display: flex;
+    
 }
+
 .title{
     text-align: center;
     font-size: 2rem;
@@ -91,7 +102,7 @@
     transform: scale(1.1);
 }
 
-/* For screens with a maximum width of 768px */
+
 @media screen and (max-width: 768px) {
     .title {
         font-size: 1.5rem;
@@ -104,7 +115,7 @@
     }
 
     .details, .sending {
-        width: 80%;
+        width: 65%;
         margin-left: 0;
         margin-top: 4%;
     }
@@ -128,7 +139,6 @@
     }
 }
 
-/* For screens with a maximum width of 480px */
 @media screen and (max-width: 480px) {
     .title {
         font-size: 1.2rem;
@@ -136,7 +146,7 @@
     }
 
     .details, .sending {
-        width: 90%;
+        width: 65%;
         margin-top: 3%;
     }
 
@@ -149,7 +159,8 @@
     }
 
     .send {
-        padding: 8px 10px;
+        padding: 8px 15px;
+        margin-left: 80px;
         border-radius: 5%;
         font-size: 1rem;
     }

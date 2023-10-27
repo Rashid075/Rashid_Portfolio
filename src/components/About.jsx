@@ -1,35 +1,103 @@
-import React from 'react'
+import * as React from 'react';
+import Timeline from '@mui/lab/Timeline';
+import TimelineItem from '@mui/lab/TimelineItem';
+import TimelineSeparator from '@mui/lab/TimelineSeparator';
+import TimelineConnector from '@mui/lab/TimelineConnector';
+import TimelineContent from '@mui/lab/TimelineContent';
+import TimelineDot from '@mui/lab/TimelineDot';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
+import Typography from '@mui/material/Typography';
+import Card from '@mui/material/Card';
+import CardContent from '@mui/material/CardContent';
+import { FaHtml5, FaCss3Alt, FaJsSquare, FaReact, FaNodeJs, FaPython } from 'react-icons/fa'
+import { SiMongodb, SiExpress, SiDjango } from 'react-icons/si'
+import { BiCodeCurly } from 'react-icons/bi'
 import '../styling/About.css'
-import { FaFileDownload } from 'react-icons/fa';
-import {motion} from 'framer-motion'
-import Resume from '../assets/resume.pdf'
+
+
 export const About = () => {
     return (
-        <div id='About'>
-            <motion.h1 className='heading'
-             initial={{ opacity: 0 }}
-             animate={{opacity: 1}}
-             transition={{delay: 0.5, duration: 0.5}}>About Me</motion.h1>
-            <div className='about'>
-                <motion.div className="myself"
-                 initial={{ opacity: 0, x: -100}}
-                 animate={{opacity: 1, x:0}}
-                 transition={{delay: 0.5, duration: 0.5}}>
-                    <h2>My Introduction</h2>
-                    <p>Hello,I am Shaik Rashid,and I am a skilled web developer with a passion for creating dynamic and user-friendly websites. My portfolio showcases my expertise in crafting engaging online experiences through coding and design.</p>
-                    <a href={Resume} download><button className='download'>Download CV  <FaFileDownload /></button></a>
-                </motion.div>
-                <motion.div className="myself1"
-                 initial={{ opacity: 0, x: 200}}
-                 animate={{opacity: 1, x:0}}
-                 transition={{delay: 0.5, duration: 0.5}}>
-                    <h2>My Skills</h2>
-                    <div className="cont">
-                        <span>HTML</span> <span>CSS</span> <span>JavaScript</span> <span>ReactJS</span> <span>Node</span> <span>Express</span> <span>Mongo DB</span> <span>Django</span> <span>React Native</span> <span>Python</span> <span>C++</span> <span>Bootstrap</span> <span>C Programming</span> <span>Web Development</span>
-                    </div>
-                </motion.div>
-            </div>
+        <div className='About' id="About">
+            <h1 className='skill-heading'>Skills</h1>
+            <Timeline position="alternate" style={{paddingBottom:'20px'}}>
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                        <TimelineDot color="primary">
+                            <LaptopMacIcon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            <Card sx={{ minWidth: 200}}>
+                                <CardContent>
+                                    <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
+                                        Frontend Technologies
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                        <span > <FaHtml5 size={15} style={{ marginRight: '10px' }} />HTML</span>
+                                        <span><FaCss3Alt size={15} style={{ marginRight: '10px' }} />CSS</span>
+                                        <span><FaJsSquare size={15} style={{ marginRight: '10px' }} />JavaScript</span>
+                                        <span><FaReact size={15} style={{ marginRight: '10px' }} />ReactJS</span>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                        <TimelineDot color="primary">
+                            <LaptopMacIcon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            <Card sx={{ minWidth: 200 }}>
+                                <CardContent>
+                                    <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
+                                        Backend Technologies
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                        <span > <FaNodeJs size={15} style={{ marginRight: '10px' }} />NodeJS</span>
+                                        <span><SiExpress size={15} style={{ marginRight: '10px' }} />ExpressJS</span>
+                                        <span><SiMongodb size={15} style={{ marginRight: '10px' }} />MongoDB</span>
+                                        <span><SiDjango size={15} style={{ marginRight: '10px' }} />Django</span>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Typography>
+                    </TimelineContent>
+                </TimelineItem>
+                <TimelineItem>
+                    <TimelineSeparator>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                        <TimelineDot color="primary">
+                            <LaptopMacIcon />
+                        </TimelineDot>
+                        <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+                    </TimelineSeparator>
+                    <TimelineContent sx={{ py: '12px', px: 2 }}>
+                        <Typography variant="h6" component="span">
+                            <Card sx={{ minWidth: 200 }}>
+                                <CardContent>
+                                    <Typography variant="h5" component="div" sx={{ textAlign: 'center', fontWeight: '500', fontSize: '1.5rem' }}>
+                                        Programming Languages
+                                    </Typography>
+                                    <Typography variant="body2" sx={{ textAlign: 'center', fontSize: '1rem', color: 'black', paddingTop: '10px', display: 'flex', flexDirection: 'column', alignItems: 'flex-start', width: '100%', marginLeft: '40%' }}>
+                                        <span > <BiCodeCurly size={15} style={{ marginRight: '10px' }} />C Programming</span>
+                                        <span><BiCodeCurly size={15} style={{ marginRight: '10px' }} />C++</span>
+                                        <span><FaPython size={15} style={{ marginRight: '10px' }} />Python</span>
+                                    </Typography>
+                                </CardContent>
+                            </Card>
+                        </Typography>
+                    </TimelineContent>
+                </TimelineItem>
+            </Timeline>
         </div>
-
-    )
+    );
 }

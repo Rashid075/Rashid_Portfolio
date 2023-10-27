@@ -1,74 +1,80 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-    color: black
+    scroll-behavior: smooth;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     z-index: 10;
     padding: 1rem 0;
-    height: 50px;
-    border: 1px dotted #B4B4B3;
+    height: 60px;
+    /* border: 1px solid grey; */
     position: fixed;
+    background-image: url('https://img.freepik.com/free-photo/blue-curve-abstract-background-with-design-space_53876-104767.jpg?size=626&ext=jpg&ga=GA1.1.134294676.1694251365&semt=ais');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.head{
+.head {
     text-decoration: none;
     font-size: 1.7rem;
     margin-left: 20px;
+    color: #000; /* Set the color of .head to white */
 }
-.elements{
+
+.elements {
     display: flex;
+    color: #000;
 }
 
-.elements li{
+.elements li {
     padding: 0 1.5rem;
-    list-style-type:none;
+    list-style-type: none;
+    color: #000;
 }
 
-.icons{
+.icons {
     display: none;
 }
-.link{
+
+.link {
     text-decoration: none;
-}
-.link:hover{
-    color: #7752FE;
-    transition: 0.3s;
-    padding:2px;
+    color: #000;
 }
 
+/* Media query for smaller screens */
 @media screen and (max-width: 1040px) {
-    .elements{
+    .elements {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         position: absolute;
-        top: 0;
+        top: 0%;
         left: -150%;
         width: 100%;
         height: 100vh;
         z-index: -3;
         transition: 0.5s;
-        background-color: #000;
+        background-color: #3F3B6C;
     }
-    .elements.active{
+    
+    .elements.active {
         left: 0;
     }
-    .elements li{
+    .elements li {
         padding: 1rem;
     }
     .elements li a {
         font-size: 2rem;
-        color: #fff;
+        color: #fff;  
     }
-    .icons{
+    .icons {
         display: initial;
     }
 }
