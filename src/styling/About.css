@@ -1,28 +1,141 @@
-*{
-    scroll-behavior: smooth;   
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.About{
-    background-color: #27253a;
-    /* background-image: url('https://img.freepik.com/free-photo/blue-curve-abstract-background-with-design-space_53876-104767.jpg?size=626&ext=jpg&ga=GA1.1.134294676.1694251365&semt=ais');
-    background-repeat: no-repeat;
-    background-size: cover; */
+
+body {
+    font-family: Arial, sans-serif;
 }
-.skill-heading{
+
+.About {
+    background-color: #000;
+    padding: 50px 0;
+}
+
+.skill-heading {
     text-align: center;
     font-weight: 500;
-    font-size: 2rem;
+    font-size: 60px;
     padding: 30px;
     color: #fff;
 }
 
+.skill-heading span{
+    color: #00d8ff
+}
+
+.skills-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 10%;
+}
+
+.technical-skills, .professional-skills {
+    width: 45%;
+    margin: 20px 0;
+}
+
+.technical-skills h2, .professional-skills h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #00d8ff;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.skill-icon {
+    margin-right: 10px;
+}
+
+.skill-name {
+    flex: 1;
+}
+
+.progress-bar {
+    width: 60%;
+    background-color: #444;
+    border-radius: 20px;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 10px;
+    background-color: #00d8ff;
+    border-radius: 20px;
+}
+
+.percentage {
+    width: 10%;
+    text-align: right;
+}
+
+.circular-skill {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    color: #fff;
+}
+
+.professional-skill-row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.outer {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 10px solid #00d8ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.inner {
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#number {
+    font-size: 1.5rem;
+}
+
 @media (max-width: 1040px) {
-    .typo{
-        margin-left: 10%;
+    .skills-container {
+        padding: 0 5%;
+    }
+    .technical-skills, .professional-skills {
+        width: 100%;
     }
 }
 
 @media (max-width: 768px) {
-    .typo{
-        margin-left: 10%;
+    .skills-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .professional-skill-row {
+        flex-direction: column;
+    }
+    .circular-skill {
+        margin: 20px 0;
     }
 }

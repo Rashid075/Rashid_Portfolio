@@ -6,6 +6,7 @@ import { Projects } from '../components/Projects'
 import { Contact } from '../components/Contact'
 import { Footer } from '../components/footer'
 import { ToastContainer } from 'react-toastify'
+import { Services } from '../components/Services'
 
 
 export const Home = () => {
@@ -15,9 +16,10 @@ export const Home = () => {
         <Hero/>
         <About/>
         <Projects/>
+        <Services/>
         <Contact/>
         <ToastContainer/>
-        <Footer/>
+        
     </div>
   )
 }

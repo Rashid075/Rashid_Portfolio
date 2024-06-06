@@ -1,59 +1,58 @@
-import React, { useRef, useState } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import 'swiper/css/effect-coverflow';
-import 'swiper/css/pagination';
-import '../styling/Project.css'
-import Scholar from '../assets/logo.jpg'
-import Food from '../assets/food.png'
-import Rent from '../assets/rental.png'
-import { EffectCoverflow, Pagination } from 'swiper/modules';
+import React from 'react';
+import '../styling/Project.css';
+import Food from '../assets/order.jpg';
+import Botts from '../assets/Botts.jpg'
+import Idea from '../assets/sharing.jpg';
+import Vote from '../assets/online.jpg';
 import { FaGithub } from 'react-icons/fa';
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion';
 
 export const Projects = () => {
     return (
-        <div className='containers' id="Project">
-            <motion.h1 className='headers'>Projects</motion.h1>
-            <Swiper
-                effect={'coverflow'}
-                grabCursor={true}
-                centeredSlides={true}
-                slidesPerView={'auto'}
-                coverflowEffect={{
-                    rotate: 50,
-                    stretch: 0,
-                    depth: 100,
-                    modifier: 1,
-                    slideShadows: true,
-                }}
-                pagination={true}
-                modules={[EffectCoverflow, Pagination]}
-                className="mySwiper"
-            >
-                <SwiperSlide>
-                    <motion.div className="container">
-                        <img src={Scholar} alt="Scholarship" className='project-image' />                    <h4>Scholarship Portal</h4>
-                        <p>This is a portal where students can able to spply for the scholarships in a single application. Where students also have Eligibility criteria.This is a single web page application.</p>
-                        <a href="https://github.com/Rashid075/Scholarship-Eligibility-Portal"><button className='btn-link'> <FaGithub className='icon' />GitHub Link </button></a>
-                    </motion.div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <motion.div className="container">
-                        <img src={Food} alt="Food_Delivery" className='project-image' />
-                        <h4>Food Delivery App</h4>                     <p>This is a Website where we can oder food online at any time any where with less cost. Our partners are best because they make the delicious foods.</p>
-                        <a href="https://github.com/Rashid075/Food_Delivery"> <button className='btn-link'><FaGithub className='icon' />GitHub Link</button></a>
-                    </motion.div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <motion.div className="container">
-                        <img src={Rent} alt="Farmer_Rental" className='project-image' />
-                        <h4>Farmer Rental System</h4>
-                        <p>This is a website for the farmers where the farmers can rent any items and tools very easily from the borrower that are necessary for the farming.</p>
-                        <button className='btn-link'><FaGithub className='icon' />GitHub Link</button>
-                    </motion.div>
-                </SwiperSlide>
-            </Swiper>
+        <div className='project-section' id="Project">
+            <motion.h1 className='header'>My <span>Projects</span></motion.h1>
+            <div className='project-container'>
+                <motion.div className='project-card'>
+                    <img src={Food} alt="Food Delivery App" className='project-image' />
+                    <div className='project-info'>
+                        <h4>GoFood</h4>
+                        <p>A web application for ordering food online. Users can browse menus, place orders. This app is built with a focus on user friendly design and efficient functionality.</p>
+                        <a href="https://github.com/Rashid075/Food_Delivery" className='icon-link'>
+                            <FaGithub className='icon' />
+                        </a>
+                    </div>
+                </motion.div>
+                <motion.div className='project-card'>
+                    <img src={Botts} alt="HelperBot" className='project-image' />
+                    <div className='project-info'>
+                        <h4>HelperBot</h4>
+                        <p>A mobile application that uses ChatGPT API to respond to user queries and the DALL-E API to generate images based on user input.</p>
+                        <a href="https://github.com/Rashid075/React_Native" className='icon-link'>
+                            <FaGithub className='icon' />
+                        </a>
+                    </div>
+                </motion.div>
+                <motion.div className='project-card'>
+                    <img src={Vote} alt="Digital-Ballot" className='project-image' />
+                    <div className='project-info'>
+                        <h4>Digital-Ballot</h4>
+                        <p>A web application which allows the eligible users to cast their votes remotely through an initiative and user-friendly interface.</p>
+                        <a href="https://github.com/Rashid075/Digital-Ballot" className='icon-link'>
+                            <FaGithub className='icon' />
+                        </a>
+                    </div>
+                </motion.div>
+                <motion.div className='project-card'>
+                    <img src={Idea} alt="IdeaFusion" className='project-image' />
+                    <div className='project-info'>
+                        <h4>Idea-Fusion</h4>
+                        <p>A platform where you can share your innovative ideas, collaborate with like-minded people and bring your visions to life.</p>
+                        <a href="https://github.com/Rashid075/Idea_Fusion" className='icon-link'>
+                            <FaGithub className='icon' />
+                        </a>
+                    </div>
+                </motion.div>
+            </div>
         </div>
-    )
-}
+    );
+};

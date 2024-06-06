@@ -1,169 +1,168 @@
-*{
+* {
     font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
     scroll-behavior: smooth;
-}
-.heroo{
-    /* background-color: #FFF0F5; */
-    background-image: url('https://img.freepik.com/free-photo/blue-curve-abstract-background-with-design-space_53876-104767.jpg?size=626&ext=jpg&ga=GA1.1.134294676.1694251365&semt=ais');
-    background-repeat: no-repeat;
-    background-size: cover;
+  }
+  
+  .heroo {
+    background-color: #000; 
     padding-top: 55px;
-}
-
-.text{
+    color: #fff;
+    position: relative;
+    height: 100vh;
+  }
+  
+  .text {
     position: absolute;
-    top:30%;
+    top: 20%;
     left: 10%;
-}
-
-.text .header{
+  }
+  
+  .text .header {
+    padding-top: 40px;
     font-size: 2rem;
-    font-weight: 500;
-}
-.text .para{
-    padding-top: 15px;
+    font-weight: 550;
+    color: #fff;
+  }
+  
+  .text .para {
     width: 60%;
-}
-
-.btn{
+    color: #ccc;
+  }
+  
+  .btn {
     position: absolute;
     top: 50%;
     left: 10%;
     margin-top: 10px;
-}
-
-.btn .contact{
+  }
+  
+  .btn .contact,
+  .btn .download {
     margin-right: 20px;
-    padding: 10px;
-    background-color: #7752FE;
-    color: #fff;
-    border: none;
-    border-radius: 8px;
-    cursor:pointer
-}
-.btn .contact:hover{
-    transform: scale(1.1);
-    transition: 0.3s;
-}
-.btn .download{
-    padding: 10px;
+    padding: 10px 20px;
     background-color: transparent;
-    border: 0;
+    border: 2px solid #00A9FF; 
+    color: #00A9FF;
     border-radius: 8px;
-    cursor:pointer;
-    outline: 0;
-    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
-}
-
-.btn .download:hover{
-    transition: 0.5s;
-    background-color: #7752FE;
-    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .btn .contact:hover,
+  .btn .download:hover {
+    background-color: #00A9FF; 
+    color: #000; 
     transform: scale(1.1);
-}
-
-.social-media{
+  }
+  
+  .social-media {
     position: absolute;
-    top:66%;
-    left:10%;
-}
-
-.social-links{
+    top: 63%;
+    left: 10%;
+  }
+  
+  .social-links {
     margin: 10px;
-    border: 0;
+    border: 2px solid #00A9FF; 
     border-radius: 50%;
-    padding: 10px 10px 5px 10px;
-    outline: 0;
-    box-shadow: -7px -7px 12px rgba(255,255,255,0.1),3px 3px 12px rgba(0,0,0,0.2);
-    color: #000;
-}
-
-.social-links:hover{
-    background-color: #00A9FF;
-    color: #fff;
-    transition: 0.5s;
-}
-
-.images img{
-    width: 30%;
-    height: 68vh;
-    margin-left: 45rem;
-    margin-top:10%;
     padding: 10px;
-    border-radius: 50%;
-}
-
-
-@media screen and (max-width: 1040px) {
-    .images{
-        text-align: center;
+    background-color: #000; 
+    outline: 0;
+    color: #00d8ff; 
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.5s, color 0.5s, border-color 0.5s;
+  }
+  
+  .social-links:hover {
+    background-color: #00A9FF; 
+    color: #000; 
+    
+  }
+  
+  .images img {
+    width: 35%;
+    height: 70vh;
+    margin-left: 50rem;
+    margin-top: 5%;
+    padding: 10px;
+    
+  }
+  
+  @media screen and (max-width: 1040px) {
+    .images {
+      text-align: center;
     }
+  
     .images img {
-        width: 65%;
-        height: 35vh;
-        margin-left: 0;
-        margin-top: 10px;
+      width: 65%;
+      height: 35vh;
+      margin-left: 0;
+      margin-top: 10px;
     }
+  
     .text {
-        position: relative;
-        top: auto;
-        left: auto;
-        text-align: center;
+      position: relative;
+      top: auto;
+      left: auto;
+      text-align: center;
     }
-
+  
     .text .header {
-        font-size: 1.5rem;
-        font-weight: 600;
-        padding-top: 17%;
+      font-size: 1.5rem;
+      font-weight: 600;
+      padding-top: 17%;
     }
-
+  
     .text .para {
-        width: 80%;
+      width: 80%;
     }
-
+  
     .btn {
-        position: relative;
-        top: auto;
-        left: auto;
-        text-align: center;
-        margin-top: 20px;
+      position: relative;
+      top: auto;
+      left: auto;
+      text-align: center;
+      margin-top: 20px;
     }
-
-    .btn .contact {
-        margin-right: 10px;
-    }
-
-    .btn .download {
-        margin-top: 10px;
-    }
-
-    .social-media {
-        position: relative;
-        top: auto;
-        left: auto;
-        text-align: center;
-        margin-top: 20px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .text .header {
-        font-size: 1.2rem;
-    }
-
-    .text .para {
-        width: 90%;
-    }
-
+  
     .btn .contact,
     .btn .download {
-        padding: 8px;
-        font-size: 0.9rem;
+      margin-right: 10px;
+      margin-top: 10px;
     }
-
+  
+    .social-media {
+      position: relative;
+      top: auto;
+      left: auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .text .header {
+      font-size: 1.2rem;
+    }
+  
+    .text .para {
+      width: 90%;
+    }
+  
+    .btn .contact,
+    .btn .download {
+      padding: 8px;
+      font-size: 0.9rem;
+    }
+  
     .social-links {
-        padding: 8px;
+      padding: 8px;
     }
-}
-
-/* Add more media queries as needed for other screen sizes */
+  }
+  
