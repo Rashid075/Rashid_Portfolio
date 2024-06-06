@@ -19,7 +19,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 50px;
+    gap: 20px;
   }
   
   .service-card {

@@ -9,8 +9,8 @@ export const Contact = () => {
                 <h2>Contact <span>Me</span></h2>
                 <h3>Let's Work Together</h3>
                 <ul className='contact-list'>
-                    <li><FaMailBulk size={20} style={{ marginRight: 10 }} /> rashidshaik354@gmail.com</li>
-                    <li><FaPhone size={20} style={{ marginRight: 10 }} /> +91 8374339100</li>
+                    <li><FaMailBulk size={20}  /> rashidshaik354@gmail.com</li>
+                    <li><FaPhone size={20}  /> +91 8374339100</li>
                 </ul>
                 <div className='contact-icons'>
                     <a href='https://github.com/Rashid075'><FaGithub size={20} /></a>
